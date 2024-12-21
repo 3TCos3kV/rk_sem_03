@@ -53,7 +53,7 @@ void free_arr(unique_name_t **arr, size_t size)
 void print_arr(FILE *f, unique_name_t **arr, size_t size)
 {
     for (size_t i = 0; i < size; i++)
-        fprintf(f, "%s %d\n", (*arr)[i].name, (*arr)[i].amount_in_file);
+        fprintf(f, "%s: %d\n", (*arr)[i].name, (*arr)[i].amount_in_file);
 }
 
 int read_unique_arr(unique_name_t **arr, size_t *size, size_t *capacity, FILE *f)
